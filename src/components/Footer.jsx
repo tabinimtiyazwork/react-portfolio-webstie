@@ -6,7 +6,7 @@ function Footer(props) {
       <div className="footer-content">
         <img className="logo" src={props.logo} alt="logo" />
         <div className="attribution">
-          <h4>Attributions</h4>
+          <h4>{props.footerHeading}</h4>
           <a href={props.heroImgLink}>{props.heroImgText}</a>
           <a href={props.skillImgLink}>{props.skillImgText}</a>
           <a href={props.profileImgLink} title="hacker icons">
@@ -14,8 +14,8 @@ function Footer(props) {
           </a>
         </div>
         <div className="contact-me">
-          <h4>Contact Me</h4>
-          <p>tabinimtiyazwork85@gmail.com</p>
+          <h4>{props.footerContactHeading}</h4>
+          <p>{props.email}</p>
           <div className="social-media">
             <a href="https://instagram.com/tabin_imtiyaz85?igshid=ZDdkNTZiNTM=">
               <i className="fa-brands fa-instagram"></i>
@@ -27,7 +27,7 @@ function Footer(props) {
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
-          <h5 id="copyright"></h5>
+          <h5 id="copyright">Copyright</h5>
         </div>
       </div>
     </footer>

@@ -57,6 +57,9 @@ function App() {
       <Project projectArray={myProjects} />
       <Footer
         logo={logoImg}
+        footerHeading="Attributions"
+        footerContactHeading="Contact Me"
+        email="tabinimtiyazwork85@gmail.com"
         heroImgLink="https://www.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_10798281.htm#query=programming&position=1&from_view=search&track=sph"
         heroImgText="Image by upklyak on Freepik"
         skillImgLink="https://www.freepik.com/free-vector/future-work-concept-illustration_26459420.htm#query=coding%20profile&position=7&from_view=search&track=ais"
@@ -69,4 +72,3 @@ function App() {
 }
 
 export default App;
-

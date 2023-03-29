@@ -3,7 +3,7 @@ import React from "react";
 function Skill(props) {
   return (
     <section id="skills">
-      <h3></h3>
+      <h3>{skillHeading}</h3>
       <div className="skill-content">
         <img src={props.skillImg} alt="person" />
         <div className="skill-text">
