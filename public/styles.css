@@ -1,0 +1,543 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS Variables */
+
+:root {
+  --shadow: 10px 8px 10px 0 rgba(0, 0, 0, 0.2),
+    20px 20px 20px 0 rgba(0, 0, 0, 0.19);
+  --btnEffect: ease-in 0.3s;
+  --black: #33363f;
+  --extraDarkBlue: #205b7f;
+  --darkBlue: #33739c;
+  --instagram-color: #c13584;
+  --twitter-color: #1da1f2;
+  --extraLightBLue: #eaf7ff;
+  --lightBlue: #0e9af0;
+  --formBtnHover: #0984d0;
+  --grey: #747a7d;
+  --myFont: "Montserrat", sans-serif;
+}
+
+/* Broad Selections */
+.logo {
+  width: 5%;
+}
+
+h3 {
+  margin: 50px 0 40px 0;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--darkBlue);
+}
+
+/* Setting Body Font */
+
+body {
+  font-family: var(--myFont);
+}
+
+/* Styling Navbar */
+
+nav {
+  width: 100%;
+  height: 100px;
+  padding-top: 1%;
+}
+
+nav .navbar-content {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .nav-items {
+  margin: auto 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 300;
+  transition: var(--btnEffect);
+}
+
+.fa-instagram,
+.fa-instagram:visited {
+  color: var(--instagram-color);
+}
+
+.fa-twitter {
+  color: var(--twitter-color);
+}
+
+.nav-btn {
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid var(--lightBlue);
+  color: var(--darkBlue);
+  transition: var(--btnEffect);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.nav-btn:hover {
+  background-color: var(--lightBlue);
+  color: white;
+}
+
+/* Styling Hero Section */
+
+.introduction {
+  width: 75%;
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+#hero-img {
+  margin-bottom: -4px;
+  width: 500px;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+  color: var(--darkBlue);
+  font-weight: 700;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.introduction button {
+  cursor: pointer;
+  width: 160px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: var(--darkBlue);
+  border: none;
+  color: white;
+  font-family: var(--myFont);
+  font-size: 15px;
+  margin: 27px;
+  transition: var(--btnEffect);
+}
+
+.introduction button:hover {
+  background-color: var(--extraDarkBlue);
+}
+
+/* Styling About Section */
+
+#about {
+  background-color: var(--darkBlue);
+}
+
+.myself {
+  padding: 35px;
+  color: white;
+  width: 70%;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-img {
+  width: 20%;
+  margin: 15px;
+}
+
+.myself h2 {
+  font-weight: 800;
+  margin: 15px;
+  font-size: 30px;
+}
+
+.myself p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Styling Skills Section */
+
+.skill-content img {
+  width: 30%;
+}
+
+.skill-content {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-text ul li {
+  list-style: none;
+}
+.skill-text {
+  padding: 20px;
+  border-radius: 25px;
+  margin-left: 20px;
+  font-size: 16px;
+  background-color: var(--extraLightBLue);
+  box-shadow: var(--shadow);
+}
+
+.skill-text ul li {
+  margin: 10px;
+}
+
+/* Styling Project Section */
+
+#projects {
+  margin-bottom: 5%;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  width: 75%;
+  gap: 63px;
+  margin: auto;
+}
+
+.no-project-cards {
+  width: 50%;
+  margin: auto;
+}
+
+.project-card {
+  overflow: hidden;
+  background-color: var(--extraLightBLue);
+  border-radius: 20px;
+  padding: 1px;
+  text-align: center;
+  width: 290px;
+  box-shadow: var(--shadow);
+  height: 247px;
+}
+.project-img {
+  width: 295px;
+  height: 180px;
+  transition: ease-in 0.5s;
+}
+
+.project-img-container {
+  padding: 1px;
+  width: 295px;
+  height: 180px;
+  background-color: var(--black);
+}
+
+.no-project-card{
+  width: 100%;
+  height: 140px;
+}
+
+.no-project-img{
+  width: 100%;
+  height: 140px;
+}
+
+.project-img-container h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(179, 179, 179);
+}
+
+.project-img-container p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.project-img-container div {
+  margin: 45px;
+}
+
+.visit-btn {
+  cursor: not-allowed;
+  opacity: 0.6;
+  margin: 14px;
+  width: 100px;
+  height: 40px;
+  font: var(--myFont);
+  border-radius: 50px;
+  background: transparent;
+  background-color: var(--lightBlue);
+  color: white;
+  border: none;
+  transition: var(--btnEffect);
+}
+
+/* ENABLE HOVER WHEN YOU HAVE A PROJECT TO SHOWCASE! */
+/* .visit-btn:hover {
+  background-color: var(--darkBlue);
+} */
+
+/* Styling Footer */
+
+footer {
+  text-align: center;
+  background-color: var(--lightBlue);
+}
+
+footer .footer-content {
+  margin: auto;
+  width: 30vw;
+}
+
+footer .logo {
+  margin: 15px;
+}
+
+footer h4 {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.contact-me {
+  line-height: 2;
+  margin-top: 20px;
+}
+
+.contact-me h4 {
+  margin-bottom: 0;
+}
+
+footer .logo{
+  width: 15%;
+}
+
+footer p {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer .social-media a i {
+  font-size: 18px;
+  margin: 6px;
+  color: black;
+}
+
+#copyright {
+  font-size: 10px;
+  color: var(--black);
+}
+
+/* Styling Project Form */
+
+.form-heading {
+  margin-bottom: 25px;
+}
+
+.form-heading p,
+h1 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.form-heading h1 {
+  color: var(--extraDarkBlue);
+}
+
+form {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+form input,
+textarea {
+  margin: 0 0 11px;
+  height: 25px;
+  font-family: var(--myFont);
+  border: 1px solid rgb(218, 210, 210);
+  padding: 10px;
+}
+
+form .project-info {
+  width: 344px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+.form-btn {
+  cursor: pointer;
+  text-align: center;
+  width: 120px;
+  margin-bottom: 20px;
+  height: 40px;
+  font: var(--myFont);
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: var(--lightBlue);
+  color: white;
+  border: none;
+  transition: var(--btnEffect);
+}
+
+form button:hover {
+  background-color: var(--formBtnHover);
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1032px) {
+  .skill-content {
+    flex-direction: column;
+  }
+  .skill-content img {
+    width: 260px;
+  }
+
+  #skills h3 {
+    margin: 20px 0 15px 0;
+  }
+}
+
+@media only screen and (max-width: 1034px) {
+  .build-container h2 {
+    font-size: 22px;
+  }
+  .build-container p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h3 {
+    margin: 20px 0 15px 0;
+  }
+  .logo {
+    width: 70px;
+  }
+
+  .introduction {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  #hero-img {
+    width: 475px;
+  }
+
+  .introduction h1 {
+    font-size: 5.5rem;
+  }
+
+  .introduction p {
+    font-size: 1.5rem;
+  }
+
+  .myself {
+    width: 100%;
+    padding: 35px 0;
+  }
+
+  .profile-img {
+    width: 230px;
+  }
+
+  .myself h2 {
+    font-size: 41px;
+  }
+
+  .myself p {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  .project-cards {
+    grid-template-columns: auto;
+  }
+
+  .build-container {
+    display: none;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+  footer .footer-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1032px) {
+  .project-cards {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .navbar-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    margin-bottom: 40px;
+  }
+  nav ul li {
+    padding: 12px;
+  }
+
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  nav ul {
+    padding-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .no-project-card, .no-project-img{
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav,
+  #hero,
+  #about,
+  #skills,
+  #projects,
+  footer {
+    width: 150%;
+  }
+}
+
+/* THE END */
