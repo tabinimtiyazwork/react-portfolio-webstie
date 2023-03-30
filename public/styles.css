@@ -336,8 +336,8 @@ footer .logo {
 }
 
 footer p {
-  color: white;
-  font-weight: 300;
+  color: var(--black);
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -421,15 +421,15 @@ form button:hover {
     align-items: center;
   }
 
-  nav .logo{
+  nav .logo {
     width: 15%;
   }
 
-  nav ul li{
+  nav ul li {
     padding: 15px;
   }
 
-  nav ul li a{
+  nav ul li a {
     font-size: 1.5rem;
   }
 
@@ -454,30 +454,30 @@ form button:hover {
     width: 95vw;
   }
 
-  .profile-img{
+  .profile-img {
     width: 30%;
   }
 
-  .myself h2{
+  .myself h2 {
     font-size: 20px;
     margin: 5px;
   }
 
-  .myself p{
+  .myself p {
     font-size: 15px;
     padding: 10px 10px 20px;
   }
 
-  .skill-content{
+  .skill-content {
     flex-direction: column;
     width: 100%;
   }
 
-  .skill-content img{
+  .skill-content img {
     width: 60%;
   }
 
-  .skill-text{
+  .skill-text {
     margin: 15px;
   }
 
@@ -489,12 +489,22 @@ form button:hover {
     margin: 28px;
   }
 
-  .no-project-cards{
+  .no-project-cards {
     width: 100%;
   }
 
-  footer .footer-content{
+  footer .footer-content {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .skill-content {
+    flex-direction: column;
+  }
+
+  .attribution a {
+    font-size: 13px;
   }
 }
 
