@@ -22,7 +22,7 @@ function App() {
         github={social.github}
       />
       <Hero
-        heading="Hi, I'm None!"
+        heading="Hi, I'm Tabin Imtiyaz"
         subheading="a front-end web developer!"
         heroImg={heroImg}
       />
