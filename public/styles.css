@@ -451,6 +451,7 @@ form button:hover {
 
   .myself {
     padding: 0;
+    width: 95vw;
   }
 
   .profile-img{
@@ -469,6 +470,7 @@ form button:hover {
 
   .skill-content{
     flex-direction: column;
+    width: 100%;
   }
 
   .skill-content img{
@@ -493,10 +495,6 @@ form button:hover {
 
   footer .footer-content{
     width: 100%;
-  }
-
-  #introduction, #skills, #about, footer{
-    width: 100vw;
   }
 }
 
