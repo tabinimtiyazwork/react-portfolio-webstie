@@ -11,6 +11,7 @@ import Skill from "./Skill";
 import Project from "./Project";
 import myProjects from "../js/projects";
 import Footer from "./Footer";
+import currentYear from "../js/date";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         skillImgText="Image by ucoyxmasayun on Freepik"
         profileImgLink="https://www.flaticon.com/free-icons/hacker"
         profileImgText="Hacker icons created by Freepik - Flaticon"
+        year={currentYear}
       />
     </>
   );

@@ -413,6 +413,7 @@ form button:hover {
 @media only screen and (max-width: 768px) {
   nav {
     height: 100%;
+    line-height: 2;
   }
 
   nav .navbar-content {
@@ -428,6 +429,10 @@ form button:hover {
     padding: 15px;
   }
 
+  nav ul li a{
+    font-size: 1.5rem;
+  }
+
   .introduction {
     margin-top: 0px;
   }
@@ -437,11 +442,59 @@ form button:hover {
   }
 
   .introduction h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .introduction p {
     font-size: 1rem;
+  }
+
+  .myself {
+    padding: 0;
+    width: 100vw;
+  }
+
+  .profile-img{
+    width: 30%;
+  }
+
+  .myself h2{
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .myself p{
+    font-size: 15px;
+    padding: 10px 10px 20px;
+  }
+
+  .skill-content{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .skill-content img{
+    width: 60%;
+  }
+
+  .skill-text{
+    margin: 15px;
+  }
+
+  #projects {
+    margin: 15px;
+  }
+
+  .project-img-container div {
+    margin: 28px;
+  }
+
+  .no-project-cards{
+    width: 100%;
+  }
+
+  footer .footer-content{
+    width: 100%;
   }
 }
 
