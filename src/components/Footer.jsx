@@ -27,7 +27,7 @@ function Footer(props) {
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
-          <h5 id="copyright">Made by me &copy; {props.year}</h5>
+          <h5 id="copyright">{props.copyrightText} &copy; {props.year}</h5>
         </div>
       </div>
     </footer>

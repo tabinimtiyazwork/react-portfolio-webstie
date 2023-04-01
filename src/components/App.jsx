@@ -23,8 +23,8 @@ function App() {
         github={social.github}
       />
       <Hero
-        heading="Hi, I'm Tabin Imtiyaz"
-        subheading="a front-end web developer!"
+        heading="Tabin Imtiyaz"
+        subheading="a web developer!"
         heroImg={heroImg}
       />
       <About
@@ -67,6 +67,7 @@ function App() {
         skillImgText="Image by ucoyxmasayun on Freepik"
         profileImgLink="https://www.flaticon.com/free-icons/hacker"
         profileImgText="Hacker icons created by Freepik - Flaticon"
+        copyrightText="Made by Tabin Imtiyaz"
         year={currentYear}
       />
     </>
